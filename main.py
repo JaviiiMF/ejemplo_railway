@@ -3,7 +3,7 @@ import dash_bootstrap_components as dbc
 from dash import dcc, html, Input, Output
 
 # iniciamos app
-app = dash.Dash(external_stylesheets=[dbc.themes.LUX])
+app = dash.Dash(__name__,external_stylesheets=[dbc.themes.LUX])
 
 
 app.title = 'Visor Estratégico'
